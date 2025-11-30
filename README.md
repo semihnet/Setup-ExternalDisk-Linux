@@ -6,6 +6,7 @@ First, plug in your disk to your Linux machine. Find out which disk it is. In my
 If you need to partition the disk then run sudo fdisk /dev/sda (if your disk is sda, or whatever else it might be) and then create a new partition with n.<br>
 
 I am using Debian, so to encrypt the disk I use LUKS:<br>
+
 sudo cryptsetup luksFormat /dev/sda1<br>
 
 I enter a complex passphrase (and save it in my password manager). Then I unlock the partition:<br>
