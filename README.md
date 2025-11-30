@@ -11,7 +11,7 @@ sudo cryptsetup luksFormat /dev/sda1
 I enter a complex passphrase (and save it in my password manager). Then I unlock the partition:
 sudo cryptsetup luksOpen /dev/sda1 backup-disk
 
-I like to zero out a disk before using it:
+I like to zero out a disk before using it:<br>
 sudo dd if=/dev/zero of=/dev/mapper/backup-disk status=progress bs=16M
 
 Note: This can take a long time. For example, on a 4 TB disk it can take about 12 hours on typical hardware.
