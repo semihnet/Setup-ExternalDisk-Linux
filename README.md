@@ -40,5 +40,7 @@ cd /backup-disk
 
 When done with the disk unmount, close the encryption, and power off the drive:<br>
 sudo umount /dev/mapper/backup-disk
+
 sudo cryptsetup luksClose backup-disk
+
 udisksctl power-off -b /dev/sda
